@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Event Registration</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f6ff;
+        }
+        .form-box {
+            width: 420px;
+            margin: 60px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px gray;
+        }
+        h2 {
+            text-align: center;
+            color: #2b4eff;
+        }
+        label {
+            font-weight: bold;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0 15px;
+        }
+        .radio-group input,
+        .checkbox-group input {
+            width: auto;
+        }
+        .btn {
+            width: 100%;
+            background: #2b4eff;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        .btn:hover {
+            background: #1a32c8;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="form-box">
+    <h2>College Event Registration</h2>
+
+    <form>
+        <label>Full Name</label>
+        <input type="text" placeholder="Enter your name" required>
+
+        <label>Email</label>
+        <input type="email" placeholder="Enter your email" required>
+
+        <label>Department</label>
+        <select required>
+            <option value="">Select Department</option>
+            <option>CSE</option>
+            <option>ECE</option>
+            <option>EEE</option>
+            <option>MECH</option>
+            <option>CIVIL</option>
+        </select>
+
+        <label>Year</label>
+        <select required>
+            <option value="">Select Year</option>
+            <option>1st Year</option>
+            <option>2nd Year</option>
+            <option>3rd Year</option>
+            <option>4th Year</option>
+        </select>
+
+        <label>Gender</label>
+        <div class="radio-group">
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other
+        </div>
+        <br>
+
+        <label>Events Interested</label>
+        <div class="checkbox-group">
+            <input type="checkbox"> Paper Presentation <br>
+            <input type="checkbox"> Coding Contest <br>
+            <input type="checkbox"> Quiz Competition <br>
+            <input type="checkbox"> Project Expo
+        </div>
+        <br>
+
+        <button class="btn">Register</button>
+    </form>
+</div>
+
+</body>
+</html>
